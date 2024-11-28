@@ -19,6 +19,14 @@ public interface SipEventService {
      */
     void requestMessage(RequestEvent requestEvent) throws ParseException;
 
+
+    /**
+     * 接收请求，邀请事件
+     * @param requestEvent requestEvent
+     */
+    void requestInvite(RequestEvent requestEvent) throws ParseException, NoSuchAlgorithmException, PeerUnavailableException;
+
+
     /**
      * 响应invite请求
      * @param responseEvent

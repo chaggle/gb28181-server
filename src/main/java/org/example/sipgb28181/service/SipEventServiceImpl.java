@@ -114,6 +114,11 @@ public class SipEventServiceImpl implements SipEventService {
     }
 
     @Override
+    public void requestInvite(RequestEvent requestEvent) throws ParseException, NoSuchAlgorithmException, PeerUnavailableException {
+
+    }
+
+    @Override
     public void responseInvite(ResponseEvent responseEvent) {
 
     }

@@ -40,6 +40,8 @@ public class SipProcessListener implements SipListener {
             case "SUBSCRIBE":
                 break;
             case "INVITE":
+                log.info("发起邀请请求" + StrUtil.str(requestEvent.getRequest().getRawContent(), Charset.defaultCharset()));
+                sipEventService.requestMessage(requestEvent);
                 break;
             default:
                 log.info("不支持的请求类型");
